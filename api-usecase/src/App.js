@@ -8,15 +8,16 @@ export default function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const options = {
+    var options = {
       method: 'GET',
-      url: 'https://weatherapi-com.p.rapidapi.com/forecast.json',
-      params: { q: 'London', days: '3' },
+      url: 'https://air-quality.p.rapidapi.com/current/airquality',
+      params: {lon: '-73.00597', lat: '40.71427'},
       headers: {
-        'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
-        'x-rapidapi-key': 'SIGN-UP-FOR-KEY',
-      },
+        'x-rapidapi-host': 'air-quality.p.rapidapi.com',
+        'x-rapidapi-key': 'd5fc714e7amsh15a174df2e85fc8p1e5753jsn5aa3857b360b'
+      }
     };
+    
 
     axios
       .request(options)
