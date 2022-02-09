@@ -5,6 +5,7 @@ import axios from 'axios';
 
 export default function App() {
   const [res, setRes] = useState([]);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     const options = {
@@ -23,8 +24,8 @@ export default function App() {
         console.log('res...', response);
         setRes(response.data);
       })
-      .catch((error) => console.log('error..', error));
+      .catch((error) => setError(error.message));
   }, []);
 
-  return <div>Response::{res}</div>;
+  return <><div>Response::{res.length}</div><div>{error}</div></>;
 }
