@@ -1,11 +1,11 @@
 import './App.css';
-import Tabs from "./Tabs.js";
-import New from "./New.js";
-import Complete from "./Complete.js";
-import Later from "./Later.js";
-import Math from "./Math.js";
-import Weather from "./Weather.js";
-import NotFound from "./NotFound.js";
+import Tabs from "./components/Tabs.js";
+import New from "./components/New.js";
+import Complete from "./components/Complete.js";
+import Later from "./components/Later.js";
+import Math from "./components/Math.js";
+import Weather from "./components/Weather.js";
+import NotFound from "./components/NotFound.js";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
