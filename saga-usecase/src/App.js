@@ -4,6 +4,7 @@ import New from "./New.js";
 import Complete from "./Complete.js";
 import Later from "./Later.js";
 import Math from "./Math.js";
+import Weather from "./Weather.js";
 import NotFound from "./NotFound.js";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/c" element={<Complete/>} />
             <Route path="/l" element={<Later/>} />
             <Route path="/m" element={<Math/>} />
+            <Route path="/w" element={<Weather/>} />
             <Route path="*" element={<NotFound/>} />
         </Routes>
       </div>

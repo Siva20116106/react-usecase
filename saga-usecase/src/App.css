@@ -4,6 +4,25 @@
 .pl {
   padding-left: 20px;
 }
-.pr {
+.pr5 {
   padding-right: 5px;
+}
+.pr {
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 30px;
+  width: 20%;
+}
+.pt {
+  padding-top: 10px;
+}
+.b {
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+.t {
+  text-align: center;
+}
+.tl {
+  text-align: left;
 }
