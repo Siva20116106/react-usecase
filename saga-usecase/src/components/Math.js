@@ -14,6 +14,11 @@ export default function App() {
         </div>
         <br />
         <div>
+          Increment after 1 Sec:{' '}
+          <Button func={() => dispatch({ type: 'INCREMENT-AFTER-A-SECOND' })} sign="+" />
+        </div>
+        <br />
+        <div>
           Decrement:{' '}
           <Button func={() => dispatch({ type: 'DECREMENT' })} sign="-" />
         </div>
